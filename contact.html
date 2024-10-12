@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <section id="contact">
+        <h1>Contact</h1>
+        <form action="https://formspree.io/f/meojggog" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        </section>
+    </div>
+    <nav>
+        <ul>
+        <li><i class="fas fa-home"></i><a href="/index.html">Accueil</a></li>
+        <li><i class="fas fa-user-alt"></i><a href="/about.html">About</a></li>
+        <li><i class="fas fa-envelope"></i><a href="/contact.html">Contact</a></li>
+    </ul>
+    </nav>
+</body>
+</html>
